@@ -1,4 +1,4 @@
-A small tool to open a file in Vim with a vertical split for diffing against clipboard content.
+An easy tool to open a file in Vim with a vertical split for diffing against clipboard content.
 
 The setup script installs xclip.
 
@@ -11,34 +11,30 @@ chmod +x .vimdiffer-setup.sh
 sudo ./vimdiffer-setup.sh
 ```
 
-3. Read the instructions.
+3. Read the instructions!
 
 ## USAGE
 
-1. copy code/text to clipbaord
+1. copy your new code/text to the clipboard
 
 2. run it
 
 ```bash
-vimdiffer <filename>
+vimdiffer <file-to-check>
 ```
 3. diff away!
 
-## INSTRUCTIONS
+## VIM INSTRUCTIONS
 
-<span style="color:red;">NOTE!</span> Remember to copy the content you want to compare before running the command.
+Key commands in Vim diff mode:
+```md
+]c : Jump to the next difference
+[c : Jump to the previous difference
+do : Obtain the difference from the other window (clipboard content)
+dp : Put the difference to the other window (clipboard content)
+:diffupdate : Refresh the diff highlighting
+:q : Quit one window
+:qa : Quit all windows
+```
 
-Usage: <span style="color:blue;">vimdiffer <filename></span>
-
-This will open the specified file in Vim with a vertical split diff against the content of your clipboard.
-
-<span style="color:yellow;">Key commands in Vim diff mode:</span>
-<span style="color:blue;">]c</span> : Jump to the next difference
-<span style="color:blue;">[c</span> : Jump to the previous difference
-<span style="color:blue;">do</span> : Obtain the difference from the other window (clipboard content)
-<span style="color:blue;">dp</span> : Put the difference to the other window (clipboard content)
-<span style="color:blue;">:diffupdate</span> : Refresh the diff highlighting
-<span style="color:blue;">:q</span> : Quit one window
-<span style="color:blue;">:qa</span> : Quit all windows
-
-TIP! Setup <span style="color:blue;">aliase vd="vimdiffer"</span> in your .bashrc or .bash_aliases file.
+TIP! Setup aliase vd="vimdiffer" in your .bashrc or .bash_aliases file.
