@@ -1,8 +1,10 @@
 An easy tool to open a file in Vim with a vertical split for diffing against clipboard content.
 
-The setup script installs xclip.
+![vimdiffer](https://github.com/user-attachments/assets/7740b8dd-2ea5-40ed-b1fd-eeac85539f1c)
 
 ## INSTALL
+NOTE! The setup script installs xclip.
+
 1. Clone the vimdiffer-setup.sh to your home folder(or anyone you like)
 
 2. Make the script executable, then run it as sudo in your terminal
