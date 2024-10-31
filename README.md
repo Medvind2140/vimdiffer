@@ -28,15 +28,18 @@ vimdiffer <file-to-check>
 
 ## VIM INSTRUCTIONS
 
-Key commands in Vim diff mode:
+Key commands in Vim diff mode (NOTE! not INSERT mode):
 ```md
 ]c : Jump to the next difference
 [c : Jump to the previous difference
 do : Obtain the difference from the other window (clipboard content)
-dp : Put the difference to the other window (clipboard content)
+zf : Toggle folds
+u : Undo
+r : Redo
 :diffupdate : Refresh the diff highlighting
-:q : Quit one window
+:w : Write file
 :qa : Quit all windows
+:wqa! : Write and Quit all windows
 ```
 
 TIP! Setup aliase vd="vimdiffer" in your .bashrc or .bash_aliases file.
